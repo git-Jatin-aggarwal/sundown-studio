@@ -1,0 +1,102 @@
+@font-face {
+    font-family: neu;
+    src: url(/assests/fonts/NeueHaasDisplayMediu.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "neu";
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+}
+
+nav {
+    padding: 2vw 0vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part2 {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+#nav-part2 h4 {
+    padding: 10px 20px;
+    font-weight: 500;
+    border: 1px solid #0000003c;
+    border-radius: 50px;
+    color: #000000bb;
+    font-size: 1.1vw;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav-part2 h4::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    transition: all ease 0.4s;
+
+}
+
+#nav-part2 h4:hover::after {
+    top: 0;
+    border-radius: 0;
+}
+
+#nav-part2 h4 a {
+    text-decoration: none;
+    z-index: 9;
+    position: relative;
+    color: #000000bb;
+
+}
+
+#nav-part2 h4:hover a {
+    color: #fff;
+}
+
+#center {
+    height: 65vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 2.5vw;
+    border-bottom: 1px solid #0000003c;
+}
+
+#left h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+
+#right h1{
+    font-size: 10vw;
+    line-height: 8vw;
+    text-align: right;
+}
