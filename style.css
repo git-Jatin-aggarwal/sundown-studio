@@ -3,6 +3,16 @@
     src: url(/assests/fonts/NeueHaasDisplayMediu.ttf);
 }
 
+@font-face {
+    font-family: neu;
+    src: url(/assests/fonts/NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    src: url(/assests/fonts/NeueHaasDisplayRoman.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +24,8 @@ html,
 body {
     width: 100%;
     height: 100%;
+    background-color: #EFEAE3;
+
 }
 
 #page1 {
@@ -95,20 +107,20 @@ nav {
     line-height: 2vw;
 }
 
-#right h1{
+#right h1 {
     font-size: 10vw;
     line-height: 8vw;
     text-align: right;
 }
 
-#page1 video{
+#page1 video {
     width: 100%;
     position: relative;
-    border-radius:30px;
+    border-radius: 30px;
     margin-top: 4vw;
 }
 
-#hero-shape{
+#hero-shape {
     position: absolute;
     height: 36vw;
     width: 46vw;
@@ -116,7 +128,7 @@ nav {
     top: 67vh;
 }
 
-#hero1{
+#hero1 {
     height: 100%;
     width: 100%;
     background-color: #FE320A;
@@ -126,7 +138,7 @@ nav {
     position: absolute;
 }
 
-#hero2{
+#hero2 {
     height: 30vw;
     position: absolute;
     width: 30vw;
@@ -141,12 +153,12 @@ nav {
 }
 
 
-#hero3{
+#hero3 {
     height: 30vw;
     position: absolute;
     width: 30vw;
     background: linear-gradient(#FE320A, #fe3f0a);
-   border-radius: 50%;
+    border-radius: 50%;
     filter: blur(25px);
     animation-name: anime1;
     animation-duration: 5s;
@@ -156,41 +168,45 @@ nav {
 }
 
 @keyframes anime1 {
-    from{
-        transform: translate(55%,-3%);
+    from {
+        transform: translate(55%, -3%);
     }
-    to{
-        transform: translate(0%,10%);
-    }
-}
-@keyframes anime2 {
-    from{
-        transform: translate(5%,-5%);
-    }
-    to{
-        transform: translate(-20%,30%);
+
+    to {
+        transform: translate(0%, 10%);
     }
 }
 
-#page2{
+@keyframes anime2 {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translate(-20%, 30%);
+    }
+}
+
+#page2 {
     min-height: 100vh;
     width: 100%;
     background-color: #EFEAE3;
     padding: 8vw 0;
+    position: relative;
 }
 
-#moving-text{
-    overflow-x:auto ;
+#moving-text {
+    overflow-x: auto;
     white-space: nowrap;
 }
 
-#moving-text::-webkit-scrollbar{
-display: none;
+#moving-text::-webkit-scrollbar {
+    display: none;
 
 }
 
 
-.con{
+.con {
     white-space: nowrap;
     display: inline-block;
     animation-name: move;
@@ -199,26 +215,141 @@ display: none;
     animation-iteration-count: infinite;
 }
 
-#moving-text h1{
+#moving-text h1 {
     font-size: 9vw;
     display: inline-block;
 }
 
-#gola{
+#gola {
     height: 70px;
     width: 70px;
     border-radius: 50%;
     background-color: #FE320A;
     display: inline-block;
-margin: 1vw 2vw;
+    margin: 1vw 2vw;
 }
 
-@keyframes move 
-{
-    from{
+@keyframes move {
+    from {
         transform: translateX(0);
-    }to{
+    }
+
+    to {
         transform: translateX(-100%);
     }
-    
+
 }
+
+#page2-bottom {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.5vw;
+    position: relative;
+    z-index: 3;
+}
+
+#page2-bottom h1 {
+    font-size: 4vw;
+    width: 60%;
+    line-height: 4vw;
+}
+
+#bottom-part2 {
+    width: 20%;
+
+}
+
+#bottom-part2 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+#bottom-part2 p {
+    font-weight: 200;
+    margin-top: 2vw;
+
+}
+
+#goeey {
+    height: 32vw;
+    width: 32vw;
+    position: absolute;
+    background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+    border-radius: 50%;
+    top: 56%;
+    left: 25%;
+    animation: goeey 4s ease-in-out infinite alternate;
+}
+
+@keyframes goeey {
+    from {
+        filter: blur(20px);
+
+        transform: translate(10%, -10%) skew(0);
+    }
+
+    to {
+        filter: blur(30px);
+
+        transform: translate(-10%, 10%) skew(-10deg);
+    }
+
+}
+
+#page3 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 4vw;
+}
+
+.elem {
+    height: 150px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    border-bottom: 1px solid #13121274;
+    overflow: hidden;
+}
+
+.elem h2 {
+    font-size: 3vw;
+    position: relative;
+    z-index: 99;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.25s;
+}
+
+.elem:hover .overlay{
+    top:0;
+}
+
+.elem h2 a{
+    text-decoration: none;
+    color: #000;
+}
+
+#image-fixed{
+    width: 24vw;
+    height: 30vw;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 99;
+    background-color: #FE320A;
+    top: 25%;
+    left: 50%;
+    display: none;
+}
+
