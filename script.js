@@ -24,26 +24,26 @@ elems.forEach(function (e) {
     if(image ==="elem1"){
 
       fixedVideo.style.display ="block"
-       fixedVideo.src ="/assests/videos/elem2.mp4"
+       fixedVideo.src ="./assests/videos/elem2.mp4"
        fixedImage.style.display ="none"
 
     } else if(image ==="elem2"){
 
       fixedVideo.style.display ="block"
-      fixedVideo.src ="/assests/videos/elem8.mp4" 
+      fixedVideo.src ="./assests/videos/elem8.mp4" 
       fixedImage.style.display ="none"
 
     } else if(image === "elem3"){
 
       fixedVideo.style.display ="block"
-      fixedVideo.src ="/assests/videos/elem1.mp4" 
+      fixedVideo.src ="./assests/videos/elem1.mp4" 
       fixedImage.style.display ="none"
 
     }
     else if(image === "elem4"){
       fixedImage.style.display ="block"
 
-      fixedImage.src="/assests/images/elem4.webp"
+      fixedImage.src="./assests/images/elem4.webp"
 
       fixedVideo.style.display ="none"
 
@@ -53,26 +53,26 @@ elems.forEach(function (e) {
 
       fixedVideo.style.display ="block"
 
-      fixedVideo.src ="/assests/videos/elem3.mp4" 
+      fixedVideo.src ="./assests/videos/elem3.mp4" 
       fixedImage.style.display ="none"
     }
     else if(image === "elem6"){
       fixedVideo.style.display ="block"
 
-      fixedVideo.src ="/assests/videos/elem5.mp4" 
+      fixedVideo.src ="./assests/videos/elem5.mp4" 
       fixedImage.style.display ="none"
     }
     else if(image === "elem7"){
       fixedImage.style.display ="block"
 
-      fixedImage.src="/assests/images/elem6.webp"
+      fixedImage.src="./assests/images/elem6.webp"
 
       fixedVideo.style.display ="none"
 
     }else if(image === "elem8"){
       fixedVideo.style.display ="block"
 
-      fixedVideo.src ="/assests/videos/elem7.mp4" 
+      fixedVideo.src ="./assests/videos/elem7.mp4" 
       fixedImage.style.display ="none"
     }
   });

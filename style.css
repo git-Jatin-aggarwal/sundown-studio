@@ -1,24 +1,24 @@
 @font-face {
   font-family: neu;
-  src: url(/assests/fonts/NeueHaasDisplayMediu.ttf);
+  src: url(./assests/fonts/NeueHaasDisplayMediu.ttf);
 }
 
 @font-face {
   font-family: neu;
-  src: url(/assests/fonts/NeueHaasDisplayLight.ttf);
+  src: url(./assests/fonts/NeueHaasDisplayLight.ttf);
 }
 
 @font-face {
   font-family: neu;
-  src: url(/assests/fonts/NeueHaasDisplayRoman.ttf);
+  src: url(./assests/fonts/NeueHaasDisplayRoman.ttf);
 }
 @font-face {
   font-family: neu;
-  src: url(/assests/fonts/NeueHaasDisplayRoman.ttf);
+  src: url(./assests/fonts/NeueHaasDisplayRoman.ttf);
 }
 @font-face {
   font-family: boldneu;
-  src: url(/assests/fonts/NeueHaasDisplayBold.ttf);
+  src: url(./assests/fonts/NeueHaasDisplayBold.ttf);
 }
 
 * {
