@@ -4,7 +4,9 @@ const scroll = new LocomotiveScroll({
 });
 
 var fixed = document.querySelector("#image-fixed");
+var fixedVideo = document.querySelector("#image-fixed video");
 var elemC = document.querySelector("#elem-container");
+var fixedImage = document.querySelector("#image-fixed img")
 
 elemC.addEventListener("mouseenter", function () {
   fixed.style.display = "block";
@@ -13,23 +15,71 @@ elemC.addEventListener("mouseleave", function () {
   fixed.style.display = "none";
 });
 
+
+
 var elems = document.querySelectorAll(".elem");
 elems.forEach(function (e) {
   e.addEventListener("mouseenter", function () {
-    var image = e.getAttribute("data-image");
-    fixed.style.backgroundImage = `url(${image})`;
+    var image =  e.getAttribute("id")
+    if(image ==="elem1"){
+
+      fixedVideo.style.display ="block"
+       fixedVideo.src ="/assests/videos/elem2.mp4"
+       fixedImage.style.display ="none"
+
+    } else if(image ==="elem2"){
+
+      fixedVideo.style.display ="block"
+      fixedVideo.src ="/assests/videos/elem8.mp4" 
+      fixedImage.style.display ="none"
+
+    } else if(image === "elem3"){
+
+      fixedVideo.style.display ="block"
+      fixedVideo.src ="/assests/videos/elem1.mp4" 
+      fixedImage.style.display ="none"
+
+    }
+    else if(image === "elem4"){
+      fixedImage.style.display ="block"
+
+      fixedImage.src="/assests/images/elem4.webp"
+
+      fixedVideo.style.display ="none"
+
+    }
+
+    else if(image === "elem5"){
+
+      fixedVideo.style.display ="block"
+
+      fixedVideo.src ="/assests/videos/elem3.mp4" 
+      fixedImage.style.display ="none"
+    }
+    else if(image === "elem6"){
+      fixedVideo.style.display ="block"
+
+      fixedVideo.src ="/assests/videos/elem5.mp4" 
+      fixedImage.style.display ="none"
+    }
+    else if(image === "elem7"){
+      fixedImage.style.display ="block"
+
+      fixedImage.src="/assests/images/elem6.webp"
+
+      fixedVideo.style.display ="none"
+
+    }else if(image === "elem8"){
+      fixedVideo.style.display ="block"
+
+      fixedVideo.src ="/assests/videos/elem7.mp4" 
+      fixedImage.style.display ="none"
+    }
   });
 });
 
-// var vid = document.createElement("video")
-// var elems = document.querySelectorAll(".elem")
-// elems.forEach(function(e){
-//    e.addEventListener("mouseenter",function(){
-//     var video = e.getAttribute("data-video")
-//     var addele = document.querySelector("#image-fixed").appendChild("vid")
-//      vid.textContent = `src(${video})`;
-//    })
-// })
+
+
 
 function swiperAnimation() {
   var swiper = new Swiper(".mySwiper", {
@@ -63,31 +113,6 @@ setTimeout(function () {
   loader.style.top = "-100%";
 }, 4200);
 
-
-// var Click = document.querySelectorAll(".h1")
-// var design = document.querySelector("#design1")
-// var project = document.querySelector("#project1")
-// var execution = document.querySelector("#execution1")
-//  var noflag = 0
-// Click.forEach(function(e){
-//  e.addEventListener("mouseenter",function(){
-//     if(noflag === 0){
-//       e.style.color = "#fff"
-//       e.style.borderLeft = "2px solid #FE330A"
-
-//       noflag =1
-
-//     }
-//     else if(noflag === 1){
-//       e.style.color = "#fff"
-//       e.style.borderLeft = "2px solid #FE330A"
-//       design.style.display = "none"
-//       noflag =0
-  
-//     }
-    
-//   })
-// })
 
 var designImage = document.querySelector("#design1")
 var projectImage = document.querySelector("#project1")
